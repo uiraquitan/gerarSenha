@@ -1,6 +1,6 @@
 <?php
 
-$senha = filter_input(INPUT_GET, FILTER_DEFAULT);
+$senha = filter_input(INPUT_GET, 'qtd', FILTER_DEFAULT);
 
 
 function createHash($num_caracter = 12)
@@ -12,9 +12,9 @@ function createHash($num_caracter = 12)
 }
 
 
-if (empty($senha)) {
-    $return = ['status' => false, 'msg' => createHash()];
+if (!empty($senha)) {
+    $return = ['status' => false, 'msg' => createHash($senha)];
 } else {
-    $return = ['status' => true, 'msg' => 'senha não gerada'];
+    $return = ['status' => true, 'msg' => 'Senha não gerada'];
 }
 echo json_encode($return);

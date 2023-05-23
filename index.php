@@ -11,12 +11,21 @@
 
 <body>
     <main>
+       
         <header>
             <h1>Gerador de senha</h1>
         </header>
         <article action="">
             <div class="article-control">
-                <input type="text" name="senha">
+                <div class="article-group">
+                    <input type="text" name="senha">
+                </div>
+                <select name="quantity" id="quantity" class="quantity">
+                    <option value="4">4 Caracteres </option>
+                    <option value="10">10 Caracteres </option>
+                    <option value="14">14 Caracteres </option>
+                    <option value="18">18 Caracteres </option>
+                </select>
                 <button id="gerar" type="submit">Gerar</button>
             </div>
         </article>
