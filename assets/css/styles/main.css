@@ -1,0 +1,91 @@
+body {
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+main {
+    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #b3b9db;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555;
+}
+
+article {
+    width: 100%;
+    padding: 10px;
+}
+
+.article-control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.2em;
+}
+
+button {
+    border: 1px solid #ccc;
+    width: 20%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #09c;
+}
+
+.show_password {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.show_password a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #09c;
+    background-color: #ddd;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.show_password a:hover {
+    background-color: #bbb;
+    color: #fff;
+}
